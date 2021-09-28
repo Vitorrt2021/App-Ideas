@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: slategray;
+}
+#Botão{
+    width: 100px;
+    height: 30px;
+}
+.Quadro{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(147, 164, 180);
+}
+
+.text{
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
+}
+#Quadrado{
+    margin: 100px;
+    width: 400px;
+    height: 400px ;
+    background-color: rgb(194, 196, 199);
+}
+
+#Botão{
+    background-color: white;
+    font-size: 20px;
+    height: 37px;
+}
