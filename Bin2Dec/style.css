@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    width: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.Quadro{
+    width: 300px;
+    height: 300px;
+    border: solid 3px white;
+    background-color: royalblue;
+}
+#Entrada{
+    width: 292px;
+    height: 30px;
+    font-size: 30px;
+}
+#Botão_Confirmar{
+    font-size: 30px;
+    width: 300px;
+    height: 50px;
+    background-color: white;
+}
+#Saida{
+    font-size:150px;
+}
