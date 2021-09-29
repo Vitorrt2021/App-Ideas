@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+#Historico{
+    margin:10px;
+    width: 480px;
+    height: 30px;
+    background-color:white;
+    border : solid 2px black;
+}
+#Resultado{
+    border : solid 2px black;
+    text-align:end;
+    font-size: 55px;
+    margin:10px;
+    margin-top:0px;
+    width: 480px;
+    height: 75px;
+    background-color: white;
+}
+.Calculadora{
+    border : solid 2px black;
+    width: 500px;
+    height: 600px;
+    background-color: rgb(175, 168, 168);
+    display: flex;
+    flex-wrap: wrap;;
+}
+
+.Linhas{
+    display: flex;
+    margin-left:10px;
+    width: 480px;
+    height: 105px;
+    background-color: rgb(207, 207, 207);
+}
+.tecla{
+    font-size: 80px;
+    text-align: center;
+    margin: 5px;
+    margin-left: 20px;
+    width: 90px;
+    height: 90px;
+    background-color: white;
+}

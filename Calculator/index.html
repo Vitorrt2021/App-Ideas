@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="Calculadora">
+        <label id="Historico">Historico</label>
+        <label id="Resultado"></label>
+        <div class="Teclas">
+            <div class="Linhas">
+                <div class="tecla" onclick="clickNumero(1)">1</div>
+                <div class="tecla" onclick="clickNumero(2)">2</div>
+                <div class="tecla" onclick="clickNumero(3)">3</div>
+                <div class="tecla" onclick="clickSomar()">+</div>
+            </div>
+            <div class="Linhas">
+                <div class="tecla" onclick="clickNumero(4)">4</div>
+                <div class="tecla" onclick="clickNumero(5)">5</div>
+                <div class="tecla" onclick="clickNumero(6)">6</div>
+                <div class="tecla" onclick="clickSubtrair()" >-</div>
+            </div>
+            
+            <div class="Linhas">
+                <div class="tecla" onclick="clickNumero(7)">7</div>
+                <div class="tecla" onclick="clickNumero(8)">8</div>
+                <div class="tecla" onclick="clickNumero(9)">9</div>
+                <div class="tecla" onclick="clickMultiplicar()" >X</div>
+            </div>
+            
+            <div class="Linhas">
+                <div class="tecla" onclick="clickApagar()" >C</div>
+                <div class="tecla" onclick="clickNumero(0)">0</div>
+                <div class="tecla" onclick="clickResultado()">=</div>
+                <div class="tecla" onclick="clickDividir()" >/</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
