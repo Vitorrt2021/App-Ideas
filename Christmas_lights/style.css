@@ -2,7 +2,26 @@ body{
     margin:0;
     padding: 0;
 }
+#Ordem{
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100px;
+    height: 20px;
+}
 
+.Botões{
+    margin-top: 50px;
+    margin-left: 420px;
+}
+#Festa{
+    background-color: white;
+    font-size: 40px;
+    margin-right: 10px;
+}
+#Intensidade{
+    background-color: white;
+    font-size: 40px;
+}
 .Bolinhas{
     flex-wrap: wrap;
     margin: 200px;
