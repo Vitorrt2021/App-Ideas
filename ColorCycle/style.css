@@ -1,0 +1,32 @@
+body{
+    margin:0px;
+    padding: 0px;
+}
+button{
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+    background-color: white;
+}
+button:hover{
+    background-color: rgb(189, 186, 186);
+    
+}
+.Entrada{
+    flex-wrap: wrap;
+    margin: 300px;
+    margin-left: 40%;
+    display: flex;
+    height: 100px;
+    width: 500px;
+}
+
+.caixa{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: solid 3px black;
+}

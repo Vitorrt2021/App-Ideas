@@ -1,0 +1,22 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+textarea{
+    margin:10px;
+    width: 500px;
+    height: 500px;
+}
+label{
+    margin:10px;    
+    margin-top:30px;
+}
+#entradaJson{
+    text-align: start;
+}
+.entrada{
+    display: flex;
+
+}
