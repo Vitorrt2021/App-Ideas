@@ -4,27 +4,29 @@ html{
     font-size: 10px;
 }
 body{
+    background-color: gray;
     margin:0px;
     padding: 0px;
     font-family:  'Roboto', sans-serif ;
-    font-size: 2rem;
+
 }
 
 .links{
     display: flex;
-    background-color: rgb(230, 230, 230);
+    color: white;
+    background-color: rgb(0, 0, 0);
     width: 100vw;
     height: 100vh;
-    line-height: 150%;
     justify-content: center;
     align-items: center;  
     flex-direction: column;
 }
+.links h1{
+    font-size: 4rem;
+}
 main{
     width: 100vw;
     height: 100vh;
-    background-color: beige;
-
 }
 
 .cards{
@@ -35,7 +37,7 @@ main{
 }
 .card{
     width: 300px;
-    margin: 10px;
+    margin: 20px;
     background-color: white;
     border: groove 2px black;
 }
@@ -50,8 +52,4 @@ main{
 .content{
     font-size: 2rem;
     text-align: center;
-}
-
-.card :hover{
-   
 }
