@@ -1,29 +1,48 @@
+html{
+    font-size:10px
+}
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     background-color: grey;
-    width: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    
 }
 
 
 .Quadro{
-    width: 300px;
-    height: 300px;
+    margin-top: 5%;
+    width: 50%;
     border: solid 3px white;
     background-color: royalblue;
+    display: flex;
+    flex-direction: column;
 }
 #Entrada{
-    width: 292px;
-    height: 30px;
-    font-size: 30px;
+    text-align: center;
+    width: 99%;
+    font-size:4rem;
 }
 #Botão_Confirmar{
-    font-size: 30px;
-    width: 300px;
-    height: 50px;
-    background-color: white;
+    font-size:4rem;
+    width: 100%;
+    height: 100px;
 }
 #Saida{
-    font-size:150px;
+    text-align: center;
+    font-size: 10rem;
+}
+@media (max-width: 630px) {
+    html{  
+        font-size: 6px;
+    }
+}
+@media (max-width: 380px) {
+    html{  
+        font-size: 4px;
+    }
 }

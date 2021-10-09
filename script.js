@@ -9,7 +9,7 @@ const quadros = [
     url: './ProjetosIniciante/Border-radiu_Previewer/index.html'
   },
   {
-    title:"Calculatora",
+    title:"Calculator",
     img: "./imgs/projetosIniciante/calculator.png",
     url: './ProjetosIniciante/Calculator/index.html'
     },
