@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DynamicCSSVaribles</title>
+</head>
+<body >
+    <div class='entradas'>
+      Eixo X
+      <input type="range" name="location" id="x" min="0" max="83" value="0" oninput="mudar('x',this.value)">
+      Eixo Y
+      <input type="range" name="location" id="y" min="0" max="75" value="0" oninput="mudar('y',this.value)">
+    </div>
+    <div class='quadro'>
+      <div class='objeto'>
+          <label>Login</label><input id='login' type='text' />
+          <label>Senha</label><input id='senha' type='password' />
+          <input type='reset' class='botão' onclick="resetar()" value='limpar'>
+          <input type='submit' class='botão' onclick="confirmar()" value='confirmar'>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

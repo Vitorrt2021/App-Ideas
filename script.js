@@ -32,6 +32,11 @@ const quadros = [
       title:"Dollars to cents",
       img: "./imgs/projetosIniciante/DollarsToCents.png",
       url: './ProjetosIniciante/DollarsToCents/index.html'
+      },
+    {
+      title:"Dynamic CSS Variables",
+      img: "./imgs/projetosIniciante/DynamicCSSVariables.png",
+      url: './ProjetosIniciante/DynamicCSSVariables/index.html'
       }
 ];
 

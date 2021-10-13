@@ -1,0 +1,42 @@
+html{
+    font-size: 10px;
+}
+body{
+    margin:0px;
+    padding: 0px;    
+    background-color: rgb(109, 109, 246);
+    font-size: 2rem;
+}
+.botão{
+    margin-top: 10px ;
+    font-size: 1.5rem;
+    width: 43%;
+    height: 20%;
+}
+.entradas{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.quadro{
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    background-color: blue;
+}
+
+
+.objeto{
+    padding-left: 10px;
+    background-color: white;
+    width: 200px;
+    height: 150px;
+}
+#login{
+    background-color: white;
+}
+
+#senha{
+    background-color: white;
+}
