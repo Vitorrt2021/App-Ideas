@@ -10,24 +10,28 @@
 <body >
   <div class='quadro'>  
     <div class='entrada '>
-        <input id='dinheiro'>
-      </div>
-      <div class='saida'>
-        <label> </label>
-        <label class='centavos '>Saida</label>
-        <label class='centavos '>Saida</label>
-        <label class='centavos '>Saida</label>
-        <label class='centavos '>Saida</label>
-
-      </div>
+        <input id='dinheiro' value='teste'>
+        <button onclick="contarMoedas()">Confirmar</button>
+    </div>
+    <div class='baixo'>
       <div class='saida melhor'>
-
-        <label class='centavos '>Saida</label>
-        <label class='centavos '>Saida</label>
-        <label class='centavos '>Saida</label>
-        <label class='centavos '>Saida</label>
-        
+        <label class='centavos '>1 real</label>
+        <label class='centavos '>50 centavos</label>
+        <label class='centavos '>25 centavos</label>
+        <label class='centavos '>10 centavos</label>
+        <label class='centavos '>5 centavos</label>
+        <label class='centavos '>1 centavo</label>
       </div> 
+      
+      <div class='saida'>
+        <label class='centavos ' id='um'></label>
+        <label class='centavos ' id='cinquenta'></label>
+        <label class='centavos ' id='vintecinco'></label>
+        <label class='centavos ' id='dez'></label>
+        <label class='centavos ' id='cincocentavos'></label>
+        <label class='centavos' id='umcentavo'></label>
+      </div>
+    </div>
   </div> 
     <script src="script.js"></script>
 </body>

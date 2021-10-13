@@ -27,7 +27,12 @@ const quadros = [
     title:"Color Cycle",
     img: "./imgs/projetosIniciante/colorcicle.png",
     url: './ProjetosIniciante/ColorCycle/index.html'
-    }
+    },
+    {
+      title:"Dollars to cents",
+      img: "./imgs/projetosIniciante/DollarsToCents.png",
+      url: './ProjetosIniciante/DollarsToCents/index.html'
+      }
 ];
 
 quadros.map(quadro => {
