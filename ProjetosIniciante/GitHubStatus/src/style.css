@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    'info info info '
+    'projects projects  followers'
+    'projects projects  followers';
+    grid-gap: 10px;
+    padding: 10px;
+}
+/* form */
+.form_select_name{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+    width: 400px;
+    height: 200px;
+    
+    top: 20vh;
+    left: 35vw;
+
+    border: solid 2px black;
+    border-radius: 5px;
+    
+    font-size: 25px;
+    font-weight: 700;
+
+}
+.form_select_name label{
+    text-align: center;
+}
+.form_select_name input{
+    height: 40px;
+    font-size: 25px;
+}
+#form_submit{
+    background-color: blueviolet;
+    border: none;
+    color: white;
+}
+#form_submit:hover{
+    background-color: rgb(91, 34, 145);
+}
+/* Info User */
+.info_user { 
+    grid-area: info; 
+    display: grid;
+    grid-template-areas:
+        'user_photo user_bio user_bio user_bio user_resume_languages  user_social_media user_social_media';
+}
+.user_resume_languages{
+    grid-area : user_resume_languages
+}
+.user_photo{
+    grid-area : user_photo;
+}
+.user_bio{
+    grid-area : user_bio;
+}
+
+/*  Social Media*/
+
+.user_social_media{
+    grid-area : user_social_media;
+    display: flex;
+    flex-direction: column;
+}
+.user_social_media li{
+    list-style-type: none;
+}
+.user_social_media a{
+    font-size: 20px;
+}
+/* User info */
+.user_photo >img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.user_bio {
+    margin-top: 70px;
+}
+
+/* User Projects */
+
+.user_projects { 
+    grid-area: projects;     
+    display: flex;
+    flex-wrap: wrap;
+}
+/* <h3>${name}</h3>
+            <p>${description}</p>
+            <ul> */
+
+.card_projects{
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+}
+.card_projects h3{
+    text-align: center;
+}
+.card_projects p{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    word-wrap: break-word;
+}
+.card_projects ul{
+    overflow-y: auto;
+}
+.card_projects li{
+    list-style-type: none;
+}
+.language_icon{
+    width: 20px;
+}
+/* Img Flowers */
+.user_followers{
+    grid-area: followers; 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 200px;
+}
+.img_followers{
+    height: 100px;
+}
+.img_followers a img{
+    width: 100px;
+    height: 100px;
+}
