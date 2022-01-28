@@ -1,13 +1,12 @@
 import {TOKEN} from './token.js'
+const R_TOKEN = "token "+TOKEN;
 const urlGitHub = 'https://api.github.com/users/';
 const requestOptions = {
     method: 'GET',
     headers: {
-        authorization: "token "+TOKEN
+        authorization: R_TOKEN
     }
 }
-
-console.log('token '+TOKEN)
 const resumeLanguages = {};
 const iconLanguagens = {
     'C#': `<img class='language_icon' src="./assets/icons/icons8-c-afiado-logotipo.svg" alt="c#">`,
@@ -29,7 +28,7 @@ function selectUser(){
     const user = document.querySelector('#form_name').value
     hiddenElement('.form_select_name');
     request(urlGitHub+user,requestOptions,createUserInfo);
-    createResumeLanguages()
+  //  createResumeLanguages()
 }
 function hiddenElement(element){
     document.querySelector(element).style.display = 'none';
@@ -74,12 +73,8 @@ function createCardProject(data){
         if(description) card.innerHTML += `<p>${description}</p><ul>`
         else card.innerHTML += `<p></p><ul>`
         Object.keys(languages).forEach((item) => {
-<<<<<<< HEAD
-  
-            card.innerHTML += `<li>${iconLanguagens[item.toUpperCase()] != undefined ? iconLanguagens[item.toUpperCase()] :'./assets/icons/default.svg' }<strong>${item}</strong> : ${languages[item]} </li>`
-=======
+
             card.innerHTML += `<li>${iconLanguagens[item.toUpperCase()] != undefined ? iconLanguagens[item.toUpperCase()] :`<img class='language_icon' src="./assets/icons/default.svg" alt="Default">` }<strong>${item}</strong> : ${languages[item]} </li>`
->>>>>>> 3f0cb7a94a82fda45f42d4dbc1ffdc38810e6e48
             if(resumeLanguages.hasOwnProperty(item)){
                 resumeLanguages[item] += parseInt(languages[item]);
             }else{
@@ -145,7 +140,8 @@ function createSocialMedia(data){
     socialMediaDiv.innerHTML += `</ul>`;
 }
 function request(url,requestOptions,callback){
-    fetch(url,requestOptions)
+    try{
+        fetch(url,requestOptions)
         .then(function(response){
             if(!response.ok) throw new Error("Erro ao executar requisição")
             return response.json()
@@ -160,4 +156,7 @@ function request(url,requestOptions,callback){
         .catch(function(error){
             alert(error.message)
         })
+    }catch(e){
+        console.log(e);
+    }
 }
