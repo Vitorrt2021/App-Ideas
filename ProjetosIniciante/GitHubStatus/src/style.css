@@ -117,6 +117,8 @@ main {
     overflow-y: hidden;
     text-align: center;
     word-wrap: break-word;
+
+    overflow-y: hidden;
 }
 .card_projects ul{
     overflow-y: auto;

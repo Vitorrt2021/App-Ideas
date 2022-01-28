@@ -55,7 +55,6 @@ function createUserInfo(data){
     createProjects(data);
 
     createFollowers(data);
-
 }
 
 function createCardProject(data){
@@ -89,13 +88,19 @@ function createCardProject(data){
     });
        
 }  
+follower.avatar_url != undefined ?  follower.avatar_url :
 function createResumeLanguages(){
     const list = document.createElement('ul')
     const divResume = document.querySelector('.user_resume_languages')
     Object.keys(resumeLanguages).forEach(item => {
+<<<<<<< HEAD
     list.innerHTML += `<li>${iconLanguagens[item.toUpperCase()] != undefined ? iconLanguagens[item.toUpperCase()] : `<img src="./assets/icons/default.svg" alt="Default">` }<strong>${item}</strong> : ${list[item]} </li>`
     })
     
+=======
+        list.innerHTML += `<li>${iconLanguagens[item.toUpperCase()] != undefined ? iconLanguagens[item.toUpperCase()] :'./assets/icons/default.svg' }<strong>${item}</strong> : ${languages[item]} </li>`
+    })
+>>>>>>> eab2ef82cfee173a11583b576e54f993598a969a
     divResume.append(list);
     
 }
