@@ -1,7 +1,10 @@
-
+import {TOKEN} from '../token.js'
 const urlGitHub = 'https://api.github.com/users/';
 const requestOptions = {
-    method: 'GET'
+    method: 'GET',
+    headers: {
+        authorization: "token "+TOKEN
+    }
 }
 
 
@@ -72,7 +75,7 @@ function createCardProject(data){
         if(description) card.innerHTML += `<p>${description}</p><ul>`
         else card.innerHTML += `<p></p><ul>`
         Object.keys(languages).forEach((item) => {
-            card.innerHTML += `<li>${iconLanguagens[item.toUpperCase()]}<strong>${item}</strong> : ${languages[item]} </li>`
+            card.innerHTML += `<li>${iconLanguagens[item.toUpperCase()] != undefined ? iconLanguagens[item.toUpperCase()] :`<img class='language_icon' src="./assets/icons/default.svg" alt="Default">` }<strong>${item}</strong> : ${languages[item]} </li>`
             if(resumeLanguages.hasOwnProperty(item)){
                 resumeLanguages[item] += parseInt(languages[item]);
             }else{
@@ -87,19 +90,11 @@ function createCardProject(data){
        
 }  
 function createResumeLanguages(){
-    console.log('===========================')
-    console.log(resumeLanguages)
     const list = document.createElement('ul')
     const divResume = document.querySelector('.user_resume_languages')
-    console.log('----------------------')
-    console.log(Object.keys(resumeLanguages))
-    console.log('-----------------------')
     Object.keys(resumeLanguages).forEach(item => {
-        console.log('?????????????????????????')
-        console.log(item)
-        list.innerHTML += `<li>${iconLanguagens[item.toUpperCase()]}<strong>${item}</strong> : ${languages[item]} </li>`
+    list.innerHTML += `<li>${iconLanguagens[item.toUpperCase()] != undefined ? iconLanguagens[item.toUpperCase()] : `<img src="./assets/icons/default.svg" alt="Default">` }<strong>${item}</strong> : ${list[item]} </li>`
     })
-    console.log('----------------------')
     
     divResume.append(list);
     
