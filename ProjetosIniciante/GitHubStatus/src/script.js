@@ -1,7 +1,10 @@
 
 const urlGitHub = 'https://api.github.com/users/';
 const requestOptions = {
-    method: 'GET'
+    method: 'GET',
+    headers: {
+        authorization: "token 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"
+    }
 }
 
 
@@ -52,7 +55,6 @@ function createUserInfo(data){
     createProjects(data);
 
     createFollowers(data);
-
 }
 
 function createCardProject(data){
@@ -86,21 +88,13 @@ function createCardProject(data){
     });
        
 }  
+follower.avatar_url != undefined ?  follower.avatar_url :
 function createResumeLanguages(){
-    console.log('===========================')
-    console.log(resumeLanguages)
     const list = document.createElement('ul')
     const divResume = document.querySelector('.user_resume_languages')
-    console.log('----------------------')
-    console.log(Object.keys(resumeLanguages))
-    console.log('-----------------------')
     Object.keys(resumeLanguages).forEach(item => {
-        console.log('?????????????????????????')
-        console.log(item)
-        list.innerHTML += `<li>${iconLanguagens[item.toUpperCase()]}<strong>${item}</strong> : ${languages[item]} </li>`
+        list.innerHTML += `<li>${iconLanguagens[item.toUpperCase()] != undefined ? iconLanguagens[item.toUpperCase()] :'./assets/icons/default.svg' }<strong>${item}</strong> : ${languages[item]} </li>`
     })
-    console.log('----------------------')
-    
     divResume.append(list);
     
 }

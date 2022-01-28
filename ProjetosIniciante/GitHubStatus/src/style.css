@@ -98,25 +98,24 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-/* <h3>${name}</h3>
-            <p>${description}</p>
-            <ul> */
-
 .card_projects{
     width: 200px;
     height: 250px;
     display: flex;
     flex-direction: column;
     border: 1px solid gray;
+    overflow-x: hidden;
 }
 .card_projects h3{
     text-align: center;
 }
 .card_projects p{
     width: 200px;
-    height: 50px;
+    height: 60px;
     text-align: center;
     word-wrap: break-word;
+
+    overflow-y: hidden;
 }
 .card_projects ul{
     overflow-y: auto;
