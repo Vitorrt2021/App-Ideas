@@ -74,7 +74,8 @@ function createCardProject(data){
         if(description) card.innerHTML += `<p>${description}</p><ul>`
         else card.innerHTML += `<p></p><ul>`
         Object.keys(languages).forEach((item) => {
-            card.innerHTML += `<li>${iconLanguagens[item.toUpperCase()]}<strong>${item}</strong> : ${languages[item]} </li>`
+  
+            card.innerHTML += `<li>${iconLanguagens[item.toUpperCase()] != undefined ? iconLanguagens[item.toUpperCase()] :'./assets/icons/default.svg' }<strong>${item}</strong> : ${languages[item]} </li>`
             if(resumeLanguages.hasOwnProperty(item)){
                 resumeLanguages[item] += parseInt(languages[item]);
             }else{
