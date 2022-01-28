@@ -98,12 +98,14 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
+
 .card_projects{
     width: 200px;
     height: 250px;
     display: flex;
     flex-direction: column;
     border: 1px solid gray;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 .card_projects h3{
@@ -111,7 +113,8 @@ main {
 }
 .card_projects p{
     width: 200px;
-    height: 60px;
+    height: 55px;
+    overflow-y: hidden;
     text-align: center;
     word-wrap: break-word;
 

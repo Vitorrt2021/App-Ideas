@@ -1,13 +1,13 @@
-
+import {TOKEN} from './token.js'
 const urlGitHub = 'https://api.github.com/users/';
 const requestOptions = {
     method: 'GET',
     headers: {
-        authorization: "token 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"
+        authorization: "token "+TOKEN
     }
 }
 
-
+console.log('token '+TOKEN)
 const resumeLanguages = {};
 const iconLanguagens = {
     'C#': `<img class='language_icon' src="./assets/icons/icons8-c-afiado-logotipo.svg" alt="c#">`,
@@ -74,8 +74,12 @@ function createCardProject(data){
         if(description) card.innerHTML += `<p>${description}</p><ul>`
         else card.innerHTML += `<p></p><ul>`
         Object.keys(languages).forEach((item) => {
+<<<<<<< HEAD
   
             card.innerHTML += `<li>${iconLanguagens[item.toUpperCase()] != undefined ? iconLanguagens[item.toUpperCase()] :'./assets/icons/default.svg' }<strong>${item}</strong> : ${languages[item]} </li>`
+=======
+            card.innerHTML += `<li>${iconLanguagens[item.toUpperCase()] != undefined ? iconLanguagens[item.toUpperCase()] :`<img class='language_icon' src="./assets/icons/default.svg" alt="Default">` }<strong>${item}</strong> : ${languages[item]} </li>`
+>>>>>>> 3f0cb7a94a82fda45f42d4dbc1ffdc38810e6e48
             if(resumeLanguages.hasOwnProperty(item)){
                 resumeLanguages[item] += parseInt(languages[item]);
             }else{
@@ -94,8 +98,9 @@ function createResumeLanguages(){
     const list = document.createElement('ul')
     const divResume = document.querySelector('.user_resume_languages')
     Object.keys(resumeLanguages).forEach(item => {
-        list.innerHTML += `<li>${iconLanguagens[item.toUpperCase()] != undefined ? iconLanguagens[item.toUpperCase()] :'./assets/icons/default.svg' }<strong>${item}</strong> : ${languages[item]} </li>`
+    list.innerHTML += `<li>${iconLanguagens[item.toUpperCase()] != undefined ? iconLanguagens[item.toUpperCase()] : `<img src="./assets/icons/default.svg" alt="Default">` }<strong>${item}</strong> : ${list[item]} </li>`
     })
+    
     divResume.append(list);
     
 }
