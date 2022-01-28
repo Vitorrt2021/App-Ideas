@@ -1,4 +1,4 @@
-import {TOKEN} from '../token.js'
+import {TOKEN} from './token.js'
 const urlGitHub = 'https://api.github.com/users/';
 const requestOptions = {
     method: 'GET',
@@ -7,7 +7,7 @@ const requestOptions = {
     }
 }
 
-
+console.log('token '+TOKEN)
 const resumeLanguages = {};
 const iconLanguagens = {
     'C#': `<img class='language_icon' src="./assets/icons/icons8-c-afiado-logotipo.svg" alt="c#">`,
@@ -93,14 +93,9 @@ function createResumeLanguages(){
     const list = document.createElement('ul')
     const divResume = document.querySelector('.user_resume_languages')
     Object.keys(resumeLanguages).forEach(item => {
-<<<<<<< HEAD
     list.innerHTML += `<li>${iconLanguagens[item.toUpperCase()] != undefined ? iconLanguagens[item.toUpperCase()] : `<img src="./assets/icons/default.svg" alt="Default">` }<strong>${item}</strong> : ${list[item]} </li>`
     })
     
-=======
-        list.innerHTML += `<li>${iconLanguagens[item.toUpperCase()] != undefined ? iconLanguagens[item.toUpperCase()] :'./assets/icons/default.svg' }<strong>${item}</strong> : ${languages[item]} </li>`
-    })
->>>>>>> eab2ef82cfee173a11583b576e54f993598a969a
     divResume.append(list);
     
 }

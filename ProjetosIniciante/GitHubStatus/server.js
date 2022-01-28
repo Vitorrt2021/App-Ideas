@@ -7,6 +7,5 @@ app.use(express.static('src'))
 
 const port = 3000.
 app.listen(port,()=>{
-    console.log(process.env.TOKEN)
     console.log(`ouvindo na port ${port}`)
 })
